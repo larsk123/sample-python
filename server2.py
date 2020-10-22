@@ -14,6 +14,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 port = int(os.getenv('PORT', 80))
-print('Listening on port %s' % (port))
+print('Listening Lars on port %s' % (port))
 httpd = socketserver.TCPServer(('', port), Handler)
 httpd.serve_forever()
