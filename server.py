@@ -11,7 +11,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         msg = 'Hello Lars today is Thursday number 3 and also Friday! you requested %s' % (self.path)
         self.wfile.write(msg.encode())
-
+        print('hullu lurz on friday')
 
 port = int(os.getenv('PORT', 80))
 print('Listening Lars on port %s' % (port))
